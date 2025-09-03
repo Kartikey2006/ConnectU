@@ -1,0 +1,197 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-slate-50 justify-between group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div>
+        <div class="absolute left-0 top-0 z-50 size-full min-h-screen bg-[#141414]/40">
+          <div class="flex h-full min-h-screen w-10/12 flex-col gap-4 bg-slate-50 p-4">
+            <p class="text-[#0e141b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Sophia Chen</p>
+            <ul class="flex flex-col gap-4">
+              <li class="flex h-12 items-center gap-4 rounded-xl px-4 bg-[#e7edf3]">
+                <div class="text-[#0e141b] pr-4" data-icon="House" data-size="24px" data-weight="fill">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-[#0e141b] text-base font-bold leading-tight truncate">Dashboard</p>
+              </li>
+              <li class="flex h-12 items-center gap-4 rounded-xl px-4">
+                <div class="text-[#0e141b] pr-4" data-icon="Users" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-[#0e141b] text-base font-bold leading-tight truncate">Find Alumni</p>
+              </li>
+              <li class="flex h-12 items-center gap-4 rounded-xl px-4">
+                <div class="text-[#0e141b] pr-4" data-icon="UsersThree" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-[#0e141b] text-base font-bold leading-tight truncate">Mentorship</p>
+              </li>
+              <li class="flex h-12 items-center gap-4 rounded-xl px-4">
+                <div class="text-[#0e141b] pr-4" data-icon="Handshake" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M119.76,217.94A8,8,0,0,1,112,224a8.13,8.13,0,0,1-2-.24l-32-8a8,8,0,0,1-2.5-1.11l-24-16a8,8,0,1,1,8.88-13.31l22.84,15.23,30.66,7.67A8,8,0,0,1,119.76,217.94Zm132.69-96.46a15.89,15.89,0,0,1-8,9.25l-23.68,11.84-55.08,55.09a8,8,0,0,1-7.6,2.1l-64-16a8.06,8.06,0,0,1-2.71-1.25L35.86,142.87,11.58,130.73a16,16,0,0,1-7.16-21.46L29.27,59.58h0a16,16,0,0,1,21.46-7.16l22.06,11,53-15.14a8,8,0,0,1,4.4,0l53,15.14,22.06-11a16,16,0,0,1,21.46,7.16l24.85,49.69A15.9,15.9,0,0,1,252.45,121.48Zm-46.18,12.94L179.06,80H147.24L104,122c12.66,8.09,32.51,10.32,50.32-7.63a8,8,0,0,1,10.68-.61l34.41,27.57Zm-187.54-18,17.69,8.85L61.27,75.58,43.58,66.73ZM188,152.66l-27.71-22.19c-19.54,16-44.35,18.11-64.91,5a16,16,0,0,1-2.72-24.82.6.6,0,0,1,.08-.08L137.6,67.06,128,64.32,77.58,78.73,50.21,133.46l49.2,35.15,58.14,14.53Zm49.24-36.24L212.42,66.73l-17.69,8.85,24.85,49.69Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-[#0e141b] text-base font-bold leading-tight truncate">Referrals</p>
+              </li>
+              <li class="flex h-12 items-center gap-4 rounded-xl px-4">
+                <div class="text-[#0e141b] pr-4" data-icon="Calendar" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-[#0e141b] text-base font-bold leading-tight truncate">Events</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center bg-slate-50 p-4 pb-2 justify-between">
+          <h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Dashboard</h2>
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#0e141b] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+            >
+              <div class="text-[#0e141b]" data-icon="Bell" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <h2 class="text-[#0e141b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Welcome, Sophia</h2>
+        <p class="text-[#0e141b] text-base font-normal leading-normal pb-3 pt-1 px-4">Connect with alumni and explore opportunities.</p>
+        <h3 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Recommended Mentors</h3>
+        <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+          <div class="flex items-stretch p-4 gap-3">
+            <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmz6dJS8O4oAG1AI6sAkMzxKAcYPnYRbFkiKxucPEgZTWDLOV_9mw0svKfxSV_EBpFiDwNvhUXYYZk-zc_PQjVaC2euLDR-8JskLcYWIN_8Dm56r60EGk1Acn_BLQOA6KiLHi0pO1rX_-L2Kt0MtDs-pMOQ_4HD7z60wH1Nxg0dvnq4AHTGZrsVQ0ADDtmolMsCFVG7BVjcIy72tiMSNyZVy8ahIBjiWeM2oI1pTFX6Bg02EBU-zu4oUmm7fZ-xK9mCJYmaNw9G-U");'
+              ></div>
+              <div>
+                <p class="text-[#0e141b] text-base font-medium leading-normal">Ethan Carter</p>
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Marketing</p>
+              </div>
+            </div>
+            <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCG6GPCYeCiibRg9MKZsSSxmWLLfMc_nDtNx2biN-fgtBZvDBgVsWby92oN-G29D_falfwv9bgQALM0yNXC7viUV8y_NlsJEB1pCZaqWzQJ--T4qItc0mqzwJX123u7gzj6F_8g6dSk13uC9IzNcHuIEGxtdA4UZqpO43I1Kw_37u5o2sGkAx_c5gAMOyR1ViK0qVb1BZwhmHxwN03wRv0kwDASWsTN2Kzmi6ewKJ58xxBbKMQZOJJdSfNFxQQAB_7LFevyI35TtQM");'
+              ></div>
+              <div>
+                <p class="text-[#0e141b] text-base font-medium leading-normal">Olivia Bennett</p>
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Product Management</p>
+              </div>
+            </div>
+            <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLPBFbQpe6X3kLJUZzYiYXap3hUilwa_EC8JZtVuNPN-lN9CidySgl3FqEmumCLXrqBK__LWPOQ3kpx1kyr9L4z9Drh7bdDcCaofmQUIfb-H5qgzPDbsEx1Pqd3JVuSjmHCxTgjL4M5NIjDZ3-THCYJA4fYkd4SIe_6CdiUNHG4fV_cbthqVsnTRsyL-e4ON6MH0KJuJoukwT3TmFQbcc6taJ3wpGYt1ZHj6FjhZ9ymcj8Gv9_3aL9gSk2WhTguoD-E14XgVKCmzw");'
+              ></div>
+              <div>
+                <p class="text-[#0e141b] text-base font-medium leading-normal">Noah Thompson</p>
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Finance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Upcoming Events</h3>
+        <div class="p-4">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl">
+            <div class="flex flex-[2_2_0px] flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Networking Event</p>
+                <p class="text-[#0e141b] text-base font-bold leading-tight">Alumni Mixer</p>
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Connect with fellow alumni and industry leaders.</p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#e7edf3] text-[#0e141b] text-sm font-medium leading-normal w-fit"
+              >
+                <span class="truncate">View Details</span>
+              </button>
+            </div>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDTNHZmWS4HY7dyeTt3PGSAInpXrjmY9tjXY0a9j-Mz8eeIua-XdQQjk73q6UcTO6Vj1cMkyHNrP_lEPWZEPKubJBYEYhZF9f0wuQrefRgmMGz66cFaIYb2wsdtY_177tAmatP4ugqiVZYBUPcjZqPwwCq6RRWa_PHzBROwYPKRChmrK7wOnVPLap0E2dxMFc71K9gI_tXG1jJHgmeuGGaEkc6o3CHPsgU-u2OkbA_1U0ur_a1r4IoeetSy0MztC221uW-TeWt0bo");'
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex gap-2 border-t border-[#e7edf3] bg-slate-50 px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#0e141b]" href="#">
+            <div class="text-[#0e141b] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#4e7097]" href="#">
+            <div class="text-[#4e7097] flex h-8 items-center justify-center" data-icon="Users" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#4e7097]" href="#">
+            <div class="text-[#4e7097] flex h-8 items-center justify-center" data-icon="Briefcase" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#4e7097]" href="#">
+            <div class="text-[#4e7097] flex h-8 items-center justify-center" data-icon="Bell" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="h-5 bg-slate-50"></div>
+      </div>
+    </div>
+  </body>
+</html>

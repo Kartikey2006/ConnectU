@@ -1,0 +1,274 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-slate-50 justify-between group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div>
+        <div class="absolute left-0 top-0 z-50 size-full min-h-screen bg-[#141414]/40">
+          <div class="flex h-full min-h-screen w-10/12 flex-col gap-4 bg-slate-50 p-4">
+            <p class="text-[#0e141b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Sophia Carter</p>
+            <ul class="flex flex-col gap-4">
+              <li class="flex h-12 items-center gap-4 rounded-xl px-4 bg-[#e7edf3]">
+                <div class="text-[#0e141b] pr-4" data-icon="House" data-size="24px" data-weight="fill">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-[#0e141b] text-base font-bold leading-tight truncate">Dashboard</p>
+              </li>
+              <li class="flex h-12 items-center gap-4 rounded-xl px-4">
+                <div class="text-[#0e141b] pr-4" data-icon="Users" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-[#0e141b] text-base font-bold leading-tight truncate">Student Requests</p>
+              </li>
+              <li class="flex h-12 items-center gap-4 rounded-xl px-4">
+                <div class="text-[#0e141b] pr-4" data-icon="Video" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M164.44,105.34l-48-32A8,8,0,0,0,104,80v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,129.05V95l25.58,17ZM216,40H40A16,16,0,0,0,24,56V168a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,128H40V56H216V168Zm16,40a8,8,0,0,1-8,8H32a8,8,0,0,1,0-16H224A8,8,0,0,1,232,208Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-[#0e141b] text-base font-bold leading-tight truncate">Webinars</p>
+              </li>
+              <li class="flex h-12 items-center gap-4 rounded-xl px-4">
+                <div class="text-[#0e141b] pr-4" data-icon="CurrencyDollar" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M152,120H136V56h8a32,32,0,0,1,32,32,8,8,0,0,0,16,0,48.05,48.05,0,0,0-48-48h-8V24a8,8,0,0,0-16,0V40h-8a48,48,0,0,0,0,96h8v64H104a32,32,0,0,1-32-32,8,8,0,0,0-16,0,48.05,48.05,0,0,0,48,48h16v16a8,8,0,0,0,16,0V216h16a48,48,0,0,0,0-96Zm-40,0a32,32,0,0,1,0-64h8v64Zm40,80H136V136h16a32,32,0,0,1,0,64Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-[#0e141b] text-base font-bold leading-tight truncate">Donations</p>
+              </li>
+              <li class="flex h-12 items-center gap-4 rounded-xl px-4">
+                <div class="text-[#0e141b] pr-4" data-icon="User" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-[#0e141b] text-base font-bold leading-tight truncate">Profile</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center bg-slate-50 p-4 pb-2 justify-between">
+          <h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Dashboard</h2>
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#0e141b] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+            >
+              <div class="text-[#0e141b]" data-icon="Bell" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl bg-slate-50 p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+            <div class="flex flex-[2_2_0px] flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Mentorship</p>
+                <p class="text-[#0e141b] text-base font-bold leading-tight">Pending Requests</p>
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">You have 3 pending mentorship requests from students.</p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#e7edf3] text-[#0e141b] text-sm font-medium leading-normal w-fit"
+              >
+                <span class="truncate">View Requests</span>
+              </button>
+            </div>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfC_Y-PRg5dsPyd6AzUrR4yPWjGo2-uzZRcypWeXy_8gcmKmNj0MMsHP04akgKanrgcC4mAAi9SMQmmBMm3JGSZa5AZB5vrTDY8s0PlnoRkgGrx8Rk7ytykhzpBRqdcPVQcrfaiaGjeBLRI24lxzwNDRMh0kHu3g56gtykggkXU7sEgALbD2Qanw_dZlKjevnLR3s_hqN2ZLnVxuBDIi-7H_fFk3_J4b2oCANfRkcxWzWHL7hAJZdMa9wxqqs4Fl0cnKwodeK4wZA");'
+            ></div>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl bg-slate-50 p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+            <div class="flex flex-[2_2_0px] flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Webinars</p>
+                <p class="text-[#0e141b] text-base font-bold leading-tight">Host a Paid Webinar</p>
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Share your expertise and earn by hosting a webinar for students.</p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#e7edf3] text-[#0e141b] text-sm font-medium leading-normal w-fit"
+              >
+                <span class="truncate">Host Webinar</span>
+              </button>
+            </div>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxuaXmmzGeUrIz8rQVz6XfMBBf4_tYM3Aj-JzcfSgBzNL1wjNPxieGCAIPP5ALl1d8lGwy58jB8H4PTj6yAUBmIP85RtdOBhVuL7LIVSseJEBEUoBYj3aiOvX9-ur-EpvKCt_pLnLIr3wJWiQ7SPfYVeT5apzXSiklapPrOcGZlxsmxaSV9TlPYhXR_I6jlg-bxtUjf5YW_dE0iBOxcn10U5qSRTW1c4OiEI-tnTWTg2kmr5Cvo2E-r2FAo7LAtJtD7B_uDo_TUBM");'
+            ></div>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl bg-slate-50 p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+            <div class="flex flex-[2_2_0px] flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Donations</p>
+                <p class="text-[#0e141b] text-base font-bold leading-tight">Donation History</p>
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">View your past donations and support the university's initiatives.</p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#e7edf3] text-[#0e141b] text-sm font-medium leading-normal w-fit"
+              >
+                <span class="truncate">View History</span>
+              </button>
+            </div>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDiDbgnsOGu5TqyjneuMbs1Dou6IaE50BP5wgOy928zFr0-L2jM9kdzO74I5ojk6zQPKdlKpyF1k6pe_YizFF9E1rIz-SCjG4UL340j9l91iphmc62ToRuxcqc5Q4EDET8_hp9i1eEWn08W36Ltugs2yUrvlDrj0CqGAWKdyLytjFV2BSkY9K_omECEbUnIJWzvrKIb4_qUUXOtDu3rYZA3JP2EyfeORG4Ftvpi4jkVEM0Eyp-Ax13ZXZcvq9EguY4WTAHrkQRbEyU");'
+            ></div>
+          </div>
+        </div>
+        <h2 class="text-[#0e141b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Student Success Stories</h2>
+        <div class="p-4">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl bg-slate-50 p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+            <div class="flex flex-[2_2_0px] flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#0e141b] text-base font-bold leading-tight">Ethan's Journey</p>
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Ethan, a recent graduate, credits the alumni mentorship program for his successful career in tech.</p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#e7edf3] text-[#0e141b] text-sm font-medium leading-normal w-fit"
+              >
+                <span class="truncate">Read More</span>
+              </button>
+            </div>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkbCAtO-VFwThdj9lOp808IzkRqdbNj7MUSxFvC_eA8aEqRhVgeiy6rfq4O0xaODnICgAULmqHEcunizctaGhgrduasuEQLfVbXrS7Aumj0wuGHZB4Y8P5nRy29-KdxhdgpJWmzLk_vxUj4CpYafK79GX_kxz6GFzUhRQM9aoDoY0IIQKclOS3lkEumAEfpMLuaqBBzb1YzA5f_vikec7ItPD3ghsisid59PLPynObfBCw6eyaLK8fzaks8r12KkhEB_ekcNZ77_0");'
+            ></div>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl bg-slate-50 p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+            <div class="flex flex-[2_2_0px] flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#0e141b] text-base font-bold leading-tight">Olivia's Breakthrough</p>
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">
+                  Olivia, a scholarship recipient, shares how alumni donations helped her pursue her passion in environmental science.
+                </p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#e7edf3] text-[#0e141b] text-sm font-medium leading-normal w-fit"
+              >
+                <span class="truncate">Read More</span>
+              </button>
+            </div>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCz7_DmCNKKFL8NXFhOlcZEm3Sml-WBU7VBjw67qlAH91dcZSJDOR1OCVnIB6MewqBuY3Zvi04EQKQKrE74SPtytGhQ_nniqpVM7Rca7RIdTfGOnfBlP7FAv4tgbgr0SvgnStAMucFwLOcjTkciAs9ioWZD9GjYoCV2MF4SYplUVaPbIzmgibD-hgryKbLghADqJ8PEvrogDo0q1xmqaJwI1DE-PhQpUjvV1neCWkwyagANe2yK-Y4yIdP-90RxoRQojZxen_93sAI");'
+            ></div>
+          </div>
+        </div>
+        <h2 class="text-[#0e141b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Upcoming Networking Events</h2>
+        <div class="p-4">
+          <div class="flex items-stretch justify-between gap-4 rounded-xl bg-slate-50 p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+            <div class="flex flex-[2_2_0px] flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#0e141b] text-base font-bold leading-tight">Alumni Mixer</p>
+                <p class="text-[#4e7097] text-sm font-normal leading-normal">Join us for an evening of networking and reconnecting with fellow alumni.</p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#e7edf3] text-[#0e141b] text-sm font-medium leading-normal w-fit"
+              >
+                <span class="truncate">Register Now</span>
+              </button>
+            </div>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDOzIoG8NvNa3GqvRxKdDOAzc2ZssT3vwnG2AT383NxuMGvPE-Tx2hWiXK-j33jnpqMYKF7N4CvaT8jNgSRdtmLUgcrBEA-2_blMI7B5LbsYv_IQ6el8y2rzy5xfdn290MlacbACdicDVe7OmQWGssRgZqjlBCUqLSjAM-gpqM-cZ_CkaAcQpXNl_JueyTyLoW3J2zU5Rj_qa4ojFvbJ4SgfBa2hsC1chZ_4JI3-Q6SeubUNWW_WObS0DndE9rp6neUm9WuLbmq3to");'
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex gap-2 border-t border-[#e7edf3] bg-slate-50 px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#0e141b]" href="#">
+            <div class="text-[#0e141b] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#0e141b] text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#4e7097]" href="#">
+            <div class="text-[#4e7097] flex h-8 items-center justify-center" data-icon="Users" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#4e7097] text-xs font-medium leading-normal tracking-[0.015em]">Network</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#4e7097]" href="#">
+            <div class="text-[#4e7097] flex h-8 items-center justify-center" data-icon="PlusSquare" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208Zm-32-80a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#4e7097] text-xs font-medium leading-normal tracking-[0.015em]">Post</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#4e7097]" href="#">
+            <div class="text-[#4e7097] flex h-8 items-center justify-center" data-icon="Bell" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#4e7097] text-xs font-medium leading-normal tracking-[0.015em]">Notifications</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#4e7097]" href="#">
+            <div class="text-[#4e7097] flex h-8 items-center justify-center" data-icon="Briefcase" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#4e7097] text-xs font-medium leading-normal tracking-[0.015em]">Jobs</p>
+          </a>
+        </div>
+        <div class="h-5 bg-slate-50"></div>
+      </div>
+    </div>
+  </body>
+</html>
