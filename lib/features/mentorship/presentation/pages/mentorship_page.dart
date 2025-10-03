@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:connectu_alumni_platform/core/theme/app_theme.dart';
+import 'package:connectu_alumni_platform/features/auth/bloc/auth_bloc.dart';
+import 'package:connectu_alumni_platform/core/utils/navigation_utils.dart';
 
 class MentorshipPage extends StatelessWidget {
   const MentorshipPage({super.key});
@@ -10,11 +13,28 @@ class MentorshipPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppTheme.surfaceColor,
       appBar: AppBar(
-        title: const Text('Mentorship'),
+        title: const Text(
+          'Mentorship',
+          style: TextStyle(
+            color: Color(0xFF1F2937),
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        leading: NavigationUtils.roleAwareBackButton(
+          context: context,
+          iconColor: const Color(0xFF1F2937),
+        ),
         actions: [
           IconButton(
             onPressed: () => context.go('/mentorship/create'),
-            icon: const Icon(Icons.add),
+            icon: const Icon(
+              Icons.add,
+              color: Color(0xFF1F2937),
+            ),
+            tooltip: 'Create Session',
           ),
         ],
       ),
@@ -24,18 +44,20 @@ class MentorshipPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Mentorship Sessions',
+              'Find a Mentor',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
+                color: Color(0xFF1F2937),
               ),
             ),
             const SizedBox(height: 8),
             const Text(
-              'Connect with mentors and grow your skills',
+              'Connect with experienced alumni mentors to advance your career',
               style: TextStyle(
-                color: AppTheme.textSecondary,
+                color: Color(0xFF6B7280),
                 fontSize: 16,
+                height: 1.5,
               ),
             ),
 
@@ -47,45 +69,125 @@ class MentorshipPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
+                color: Color(0xFF1F2937),
               ),
             ),
             const SizedBox(height: 16),
 
             _buildSessionCard(
-              mentorName: 'Ethan Carter',
+              mentorName: 'Rajesh Kumar',
               topic: 'Marketing Strategy',
               date: 'Dec 15, 2024',
               time: '2:00 PM',
               duration: '60 min',
-              price: '\$50',
+              price: '₹199',
               onBook: () => context.go('/mentorship/booking/1'),
             ),
 
             const SizedBox(height: 16),
 
             _buildSessionCard(
-              mentorName: 'Olivia Bennett',
+              mentorName: 'Priya Sharma',
               topic: 'Product Management',
               date: 'Dec 16, 2024',
               time: '3:00 PM',
               duration: '45 min',
-              price: '\$40',
+              price: '₹149',
               onBook: () => context.go('/mentorship/booking/2'),
             ),
 
             const SizedBox(height: 16),
 
             _buildSessionCard(
-              mentorName: 'Noah Thompson',
+              mentorName: 'Amit Patel',
               topic: 'Financial Planning',
               date: 'Dec 17, 2024',
               time: '1:00 PM',
               duration: '90 min',
-              price: '\$75',
+              price: '₹299',
               onBook: () => context.go('/mentorship/booking/3'),
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: BlocBuilder<AuthBloc, AuthState>(
+        builder: (context, state) {
+          String userRole = 'student'; // default
+          if (state is Authenticated) {
+            userRole = state.user.user.role.name;
+          }
+
+          return Container(
+            decoration: const BoxDecoration(
+              border: Border(
+                top: BorderSide(color: Color(0xFFE7EDF3), width: 1),
+              ),
+            ),
+            child: BottomNavigationBar(
+              type: BottomNavigationBarType.fixed,
+              currentIndex: 2, // Mentorship tab
+              onTap: (index) {
+                switch (index) {
+                  case 0:
+                    // Navigate to appropriate dashboard based on user role
+                    if (userRole == 'alumni') {
+                      context.go('/alumni-dashboard');
+                    } else {
+                      context.go('/student-dashboard');
+                    }
+                    break;
+                  case 1:
+                    if (userRole == 'alumni') {
+                      context.go('/alumni-network');
+                    } else {
+                      context.go('/alumni');
+                    }
+                    break;
+                  case 2:
+                    // Already on mentorship
+                    break;
+                  case 3:
+                    context.go('/notifications');
+                    break;
+                  case 4:
+                    // Referrals - only show for alumni
+                    if (userRole == 'alumni') {
+                      context.go('/referrals');
+                    }
+                    break;
+                }
+              },
+              selectedItemColor: const Color(0xFF0E141B),
+              unselectedItemColor: const Color(0xFF4E7097),
+              backgroundColor: const Color(0xFFF8FAFC),
+              elevation: 0,
+              items: [
+                const BottomNavigationBarItem(
+                  icon: Icon(Icons.home, size: 24),
+                  label: 'Dashboard',
+                ),
+                BottomNavigationBarItem(
+                  icon: const Icon(Icons.people, size: 24),
+                  label:
+                      userRole == 'alumni' ? 'Alumni Network' : 'Find Alumni',
+                ),
+                const BottomNavigationBarItem(
+                  icon: Icon(Icons.work, size: 24),
+                  label: 'Mentorship',
+                ),
+                const BottomNavigationBarItem(
+                  icon: Icon(Icons.notifications, size: 24),
+                  label: 'Notifications',
+                ),
+                if (userRole == 'alumni')
+                  const BottomNavigationBarItem(
+                    icon: Icon(Icons.handshake, size: 24),
+                    label: 'Referrals',
+                  ),
+              ],
+            ),
+          );
+        },
       ),
     );
   }
@@ -138,12 +240,13 @@ class MentorshipPage extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
+                        color: Color(0xFF1F2937),
                       ),
                     ),
                     Text(
                       topic,
                       style: const TextStyle(
-                        color: AppTheme.textSecondary,
+                        color: Color(0xFF6B7280),
                         fontSize: 16,
                       ),
                     ),
@@ -161,18 +264,18 @@ class MentorshipPage extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 20),
-          Row(
+          Wrap(
+            spacing: 12,
+            runSpacing: 8,
             children: [
               _buildInfoChip(
                 icon: Icons.calendar_today,
                 label: date,
               ),
-              const SizedBox(width: 12),
               _buildInfoChip(
                 icon: Icons.access_time,
                 label: time,
               ),
-              const SizedBox(width: 12),
               _buildInfoChip(
                 icon: Icons.timer,
                 label: duration,
@@ -213,7 +316,7 @@ class MentorshipPage extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
-        color: AppTheme.cardColor,
+        color: const Color(0xFFF3F4F6),
         borderRadius: BorderRadius.circular(20),
       ),
       child: Row(
@@ -222,14 +325,15 @@ class MentorshipPage extends StatelessWidget {
           Icon(
             icon,
             size: 16,
-            color: AppTheme.textSecondary,
+            color: const Color(0xFF6B7280),
           ),
           const SizedBox(width: 6),
           Text(
             label,
             style: const TextStyle(
-              color: AppTheme.textSecondary,
+              color: Color(0xFF6B7280),
               fontSize: 12,
+              fontWeight: FontWeight.w500,
             ),
           ),
         ],

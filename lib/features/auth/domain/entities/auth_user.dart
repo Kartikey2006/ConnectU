@@ -13,7 +13,11 @@ class AuthUser {
     required this.expiresAt,
   });
 
-  bool get isExpired => DateTime.now().isAfter(expiresAt);
+  bool get isExpired {
+    // Add a 5-minute buffer to prevent premature expiration
+    final bufferTime = DateTime.now().add(const Duration(minutes: 5));
+    return bufferTime.isAfter(expiresAt);
+  }
 
   bool get isStudent => user.role == UserRole.student;
   bool get isAlumni => user.role == UserRole.alumni;

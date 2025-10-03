@@ -104,6 +104,7 @@ CREATE TABLE public.users (
   email text NOT NULL UNIQUE,
   password_hash text NOT NULL,
   role text NOT NULL DEFAULT 'student'::text CHECK (role = ANY (ARRAY['student'::text, 'alumni'::text, 'admin'::text])),
+  supabase_auth_id text UNIQUE,
   created_at timestamp with time zone NOT NULL DEFAULT now(),
   CONSTRAINT users_pkey PRIMARY KEY (id)
 );

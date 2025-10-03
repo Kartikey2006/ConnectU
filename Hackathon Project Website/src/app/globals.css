@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Ensure all input fields have readable text color */
+input[type="text"], 
+input[type="search"], 
+input[type="email"], 
+input[type="password"],
+input[name="email"],
+input[name="password"],
+input[name="name"],
+input[name="confirmPassword"] {
+  color: #1f2937 !important;
+}
+
+/* Fix for search inputs specifically */
+input[placeholder*="Search"], 
+input[placeholder*="search"],
+input[placeholder*="email"],
+input[placeholder*="password"] {
+  color: #1f2937 !important;
+}
+
+/* Fix for auth form inputs specifically */
+.auth-form input {
+  color: #1f2937 !important;
+}
+
+/* Ensure card content text is readable */
+.bg-white > *,
+.Card > * {
+  color: #1f2937 !important;
+}
+
+/* Fix any remaining white text issues in alumni student blocks */
+.alumni-students-card .text-sm,
+.alumni-students-card .font-semibold,
+.alumni-students-card .block,
+span[class*="badge"],
+div[class*="Student"] {
+  color: #374151 !important;
+}
+
+/* Override for auth pages specifically to ensure text is visible */
+.min-h-screen input[type="text"],
+.min-h-screen input[type="email"],
+.min-h-screen input[type="password"] {
+  color: #111827 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Dark mode scrollbar */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #2d2d2d;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777;
+  }
+}

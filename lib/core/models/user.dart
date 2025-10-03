@@ -9,6 +9,7 @@ class User {
   final String? profileImageUrl;
   final String? bio;
   final String? phoneNumber;
+  final bool isProfileCompleted;
 
   const User({
     required this.id,
@@ -19,6 +20,7 @@ class User {
     this.profileImageUrl,
     this.bio,
     this.phoneNumber,
+    this.isProfileCompleted = false,
   });
 
   factory User.fromJson(Map<String, dynamic> json) {
@@ -34,6 +36,7 @@ class User {
       profileImageUrl: json['profile_image_url'] as String?,
       bio: json['bio'] as String?,
       phoneNumber: json['phone_number'] as String?,
+      isProfileCompleted: (json['is_profile_completed'] as bool?) ?? false,
     );
   }
 
@@ -47,6 +50,7 @@ class User {
       'profile_image_url': profileImageUrl,
       'bio': bio,
       'phone_number': phoneNumber,
+      'is_profile_completed': isProfileCompleted,
     };
   }
 
@@ -59,6 +63,7 @@ class User {
     String? profileImageUrl,
     String? bio,
     String? phoneNumber,
+    bool? isProfileCompleted,
   }) {
     return User(
       id: id ?? this.id,
@@ -69,6 +74,7 @@ class User {
       profileImageUrl: profileImageUrl ?? this.profileImageUrl,
       bio: bio ?? this.bio,
       phoneNumber: phoneNumber ?? this.phoneNumber,
+      isProfileCompleted: isProfileCompleted ?? this.isProfileCompleted,
     );
   }
 

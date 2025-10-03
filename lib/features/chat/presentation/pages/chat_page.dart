@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:connectu_alumni_platform/core/theme/app_theme.dart';
+import 'package:connectu_alumni_platform/core/utils/navigation_utils.dart';
 
 class ChatPage extends StatefulWidget {
   final String userId;
@@ -59,6 +60,11 @@ class _ChatPageState extends State<ChatPage> {
     return Scaffold(
       backgroundColor: AppTheme.surfaceColor,
       appBar: AppBar(
+        leading: NavigationUtils.safeBackButton(
+          context: context,
+          iconColor: const Color(0xFF0E141B),
+          iconSize: 24,
+        ),
         title: Row(
           children: [
             CircleAvatar(

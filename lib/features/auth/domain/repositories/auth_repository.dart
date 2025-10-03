@@ -33,4 +33,7 @@ abstract class AuthRepository {
   
   /// Delete account
   Future<void> deleteAccount();
+  
+  /// Restore authentication state from local storage
+  Future<AuthUser?> restoreAuthState();
 }

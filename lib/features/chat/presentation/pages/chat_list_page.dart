@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:connectu_alumni_platform/core/theme/app_theme.dart';
+import 'package:connectu_alumni_platform/core/utils/navigation_utils.dart';
 
 class ChatListPage extends StatelessWidget {
   const ChatListPage({super.key});
@@ -10,6 +11,11 @@ class ChatListPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppTheme.surfaceColor,
       appBar: AppBar(
+        leading: NavigationUtils.safeBackButton(
+          context: context,
+          iconColor: const Color(0xFF0E141B),
+          iconSize: 24,
+        ),
         title: const Text('Chats'),
         actions: [
           IconButton(
